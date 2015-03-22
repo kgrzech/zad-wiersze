@@ -23,7 +23,13 @@ class DefaultController extends Controller
     {
         return $this->render('default/pani-twardowska.html.twig');
     }
-
+      /**
+     * @Route("/spacer.html", name="spacer")
+     */
+    public function spacerAction()
+    {
+        return $this->render('default/spacer.html.twig');
+    }
     /**
      * @Route("/modlitwa-wieczorna.html", name="modlitwa-wieczorna")
     */
